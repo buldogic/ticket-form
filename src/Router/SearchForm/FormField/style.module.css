@@ -1,0 +1,56 @@
+.blok {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.departureFrom {
+  background: #ffffff;
+  border: 1px solid #B7BAC1;
+  border-radius: 10px;
+  outline: none;
+  width: 208px;
+  height: 40px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  transition: 0.1s border-color ease-out; 
+}
+
+.departureFrom:focus{
+    border-color: #5C87DB;
+    
+}
+
+.calendarIcon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+}
+
+.calendarIcon:focus{
+    background-color: black;
+}
+
+
+.withIcon {
+  padding-left: 34px;
+
+}
+
+.isError{
+  border-color: red;
+}

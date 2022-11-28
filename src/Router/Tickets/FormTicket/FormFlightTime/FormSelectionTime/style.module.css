@@ -1,0 +1,17 @@
+.time {
+  margin-left: 20px;
+  background: #ffffff;
+  border: 1px solid #b7bac1;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.1s background-color ease-out, 0.1s padding ease-out;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.timeActive {
+  background-color: #dde3ee;
+  padding: 10px 15px;
+  color: #232323;
+}

@@ -1,0 +1,43 @@
+.type {
+  width: 132px;
+  height: 26px;
+  left: 0px;
+  top: 0px;
+  background: #8ba5d8;
+  border-radius: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  padding-left: 23px;
+  padding-top: 28px;
+}
+
+.icon {
+  width: 39px;
+  height: 39px;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5c5c5c;
+}

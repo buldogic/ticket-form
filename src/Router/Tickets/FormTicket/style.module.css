@@ -1,0 +1,35 @@
+.globalTicket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.containerTicket {
+  width: 980px;
+  height: 200px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.baggage {
+  margin-top: 36px;
+}
+
+.blockPrice {
+  display: flex;
+  align-items: center;
+  padding: 48px;
+  border-left: 1px solid #DDE3EE;
+}
+
+.button{
+  margin-top: 10px;
+  width: 980px;
+  display: flex;
+  justify-content: flex-end;
+}
+

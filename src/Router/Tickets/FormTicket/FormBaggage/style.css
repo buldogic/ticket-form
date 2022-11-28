@@ -1,0 +1,17 @@
+.blockFormBaggage {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  align-items: end;
+
+}
+
+.imgBag {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.imgBaggage {
+  width: 20px;
+  height: 38px;
+}

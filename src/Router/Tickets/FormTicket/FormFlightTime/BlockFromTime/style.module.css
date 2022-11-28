@@ -1,0 +1,69 @@
+.blockTime {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.blockDepartureTime {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.departureTime {
+  font-weight: 700;
+  font-size: 24px;
+  color: #232323;
+  margin: 0;
+  padding-bottom: 8px;
+  width: 61px;
+  margin-right: 30px;
+}
+.departureCity {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+.departureData {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+.blockSchemePath {
+  display: flex;
+  align-items: flex-start;
+  margin-top: -10px;
+}
+.img {
+}
+.blockArrivalTime {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.arrivalTime {
+  font-weight: 700;
+  font-size: 24px;
+  color: #232323;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.arrivalCity {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+.arrivalData {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5c5c5c;
+}

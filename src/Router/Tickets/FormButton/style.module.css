@@ -1,0 +1,25 @@
+.button {
+    width: 158px;
+    height: 40px;
+    border-radius: 10px;
+    background: #5c87db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s background-color ease-out, 0.2s color ease-out;
+  }
+  
+  .button:hover {
+    background: #3e67b7;
+  }
+  
+  .button:active {
+    background: #5c87db;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .button:disabled {
+    background: #b7bac1;
+    color: #ffffff;
+    cursor: not-allowed;
+  }

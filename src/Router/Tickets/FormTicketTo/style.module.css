@@ -1,0 +1,62 @@
+.globalTicket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerTicket {
+  width: 980px;
+  height: 330px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ticketUp {
+  display: flex;
+  align-items: flex-start;
+  height: 165px;
+}
+.ticketDown {
+  display: flex;
+  align-items: flex-start;
+}
+.time {
+  margin-left: 25px;
+}
+.blockLine {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.line {
+  width: 658px;
+  position: relative;
+  top: 1px;
+}
+
+
+.baggage {
+  margin-top: 36px;
+  margin-left: 33px;
+}
+.price {
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #DDE3EE;
+}
+
+.button{
+  margin-top: 10px;
+  width: 980px;
+  display: flex;
+  justify-content: flex-end;
+}

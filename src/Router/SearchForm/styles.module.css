@@ -1,0 +1,57 @@
+.globalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flow-root;
+  margin: 68px 119px 0 119px;
+  height: 186px;
+  width: 962px;
+
+  margin: 30px;
+}
+
+.menuHeaderUp {
+  background-color: #5c87db;
+  padding: 17px 30px 30px 30px;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuHeaderDown {
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.button {
+  width: 158px;
+  height: 40px;
+  border-radius: 10px;
+  background: #5c87db;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s background-color ease-out, 0.2s color ease-out;
+}
+
+.button:hover {
+  background: #3e67b7;
+}
+
+.button:active {
+  background: #5c87db;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button:disabled {
+  background: #b7bac1;
+  color: #ffffff;
+  cursor: not-allowed;
+}
