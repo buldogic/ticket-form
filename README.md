@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Форма поиска авиабилетов
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Платформа: **Web**
+- Язык: **JavaScript**
 
-## Available Scripts
+## Тестовое задание: поиск авиабилетов.
 
-In the project directory, you can run:
+Для данного проекта не предусмотрено взаимодействие с сервером, поэтому все данные статичны и берутся из макета, кроме данных которые пользователь ввел в форму поиска(город,  дата), они  динамически отображаются в карточке рейса.
+
+Страницы приложения:
+1. Страница  поиска
+2. Страница с одним билетом в одну сторону 
+3. Страница с билетов туда и обратно 
+
+Описание страниц:
+1.Страница - форма поиска
+Сделана базовая валидация полей для формы поиска.
+- Откуда* - текстовое поле
+- Куда*  - текстовое поле
+- Туда* - текстовое поле
+- Обратно - текстовое поле
+- обязательные поля*
+
+Если обязательных поля не заполнены или не проходят валидацию, кнопка **“Найти билеты”** находится в состоянии *disabled*.
+
+В полях стоит проверка на ограниченное количество городов.
+
+Список городов:  
+- Москва
+- Саратов 
+- Санкт-петербург 
+- Екатеринбург
+- Волгоград
+- Пермь
+- Уфа
+- Орск
+- Казань
+- Воронеж
+
+            
+2.Страница Страница с одним билетом в одну сторону 
+
+На странцие перелёта город и дата вылета/прилёта  содержаться значения,  которые пользователь ввел в форме поиска. Пользователь может выбрать рейс с другим временем. При выборе времени, активное состояние  изменяется, также  изменяется основное время в рейсе.
+
+3.Страница с билетов туда и обратно 
+
+Есоли форме поиска было выбрано направление туда и обратно, то отобразиться страница с информацией о двух рейсах.
+
+## Используемые библиотеки
+- [React](https://reactjs.org/) - библиотека для построения интерфейсов
+- [react-router](https://reactrouter.com/en/main) - библиотека, которая  предназначена для маршрутизации в веб-приложениях
+- [react-scripts](https://www.npmjs.com/package/react-scripts) - удобная библиотека, которая поставляется с выдающейся конфигурацией, и команда сценариев, которая значительно упрощает создание приложений React
+
+## Запуск приложения
+
+### `npm ci` 
+Устанавливает зависимости напрямую из package-lock. json и использует package. json только для проверки отсутствия несовпадающих версий.
+
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Запускает приложение в режиме разработки.\
+Открыть [http://localhost:3000](http://localhost:3000) для просмотра в браузере.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `npm build`
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Собирает production build приложения
