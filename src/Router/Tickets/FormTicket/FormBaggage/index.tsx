@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 import bagPath from './bag.svg'
 import baggagePath from './baggage.svg'

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FormLogo } from './FormLogo'
 import { FormFlightTime } from './FormFlightTime'
 import { FormBaggage } from './FormBaggage'
@@ -6,7 +6,13 @@ import { FromBlockPrice } from './FormBlockPrice'
 import style from './style.module.css'
 import { FromButton } from '../FormButton'
 
-export function FormTicket(props) {
+type Props = {
+  cityFrom: string
+  cityTo: string
+  dateFrom: string
+}
+
+export function FormTicket(props: Props) {
   return (
     <>
       <div className={style.globalTicket}>

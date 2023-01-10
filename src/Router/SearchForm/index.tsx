@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { useNavigate, createSearchParams } from 'react-router-dom'
 import { ROUTES } from '../../config/routes'
 import { checkIsCorrectDate, checkIsCorrectCity } from './utils'
 import { FormField } from './FormField'
-
 import style from './styles.module.css'
 
 export function SearchForm() {
@@ -44,7 +43,7 @@ export function SearchForm() {
             value={dateFrom}
             onChange={(e) => setDateFrom(e.target.value)}
             title="Дата вылета"
-            placeholder="дд.мм.гг"
+            placeholder="дд.мм.гггг"
             showIcon
             isError={dateFrom.length > 0 ? isErrorDateFrom : false}
           />
@@ -52,7 +51,7 @@ export function SearchForm() {
             value={dateTo}
             onChange={(e) => setDateTo(e.target.value)}
             title="Дата прилёта"
-            placeholder="дд.мм.гг"
+            placeholder="дд.мм.гггг"
             showIcon
             isError={isErrorDateTo}
           />
