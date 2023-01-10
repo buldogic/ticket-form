@@ -1,4 +1,3 @@
-import React from 'react'
 import { FromButton } from '../FormButton'
 import { FormBaggage } from '../FormTicket/FormBaggage'
 import { FromBlockPriceTwo } from '../FormTicket/FormBlockPrice'
@@ -13,7 +12,14 @@ const TIME_TO = '11:05'
 const TICKET_TO_TIME = { from: TIME_FROM, to: TIME_TO }
 const TICKET_BACK_TIME = { from: TIME_TO, to: TIME_FROM }
 
-export function FormTicketTo(props) {
+type Props = {
+  cityFrom: string
+  cityTo: string
+  dateFrom: string
+  dateTo: string
+}
+
+export function FormTicketTo(props: Props) {
   return (
     <>
       <div>
@@ -37,7 +43,7 @@ export function FormTicketTo(props) {
                 </div>
               </div>
               <div className={style.blockLine}>
-                <img className={style.line} src={line} />
+                <img className={style.line} src={line} alt="img" />
               </div>
               <div className={style.ticketDown}>
                 {' '}

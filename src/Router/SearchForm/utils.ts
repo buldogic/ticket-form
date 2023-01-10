@@ -13,15 +13,15 @@ const CITIES = new Set([
   'воронеж',
 ])
 
-const date = new Date()
+// const date = new Date()
 
-export const checkIsCorrectCity = (name) => {
+export const checkIsCorrectCity = (name: string) => {
   const normalizedName = name.toLowerCase()
   const isCorrectCity = CITIES.has(normalizedName)
   return isCorrectCity
 }
 
-export const checkIsCorrectDate = (dateStr) => {
+export const checkIsCorrectDate = (dateStr: string) => {
   const now = new Date()
   const date = parse(dateStr, 'dd.MM.yyyy', now)
   if (!isValid(date)) return false

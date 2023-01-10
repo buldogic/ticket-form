@@ -1,8 +1,15 @@
-import React, { useState } from 'react'
+
 import cn from 'classnames'
+
 import style from './style.module.css'
 
-export const FormSelectionTime = (props) => {
+type Props ={
+  onClick:React.MouseEventHandler<HTMLDivElement> 
+  isSelected: boolean
+  text: string
+}
+
+export const FormSelectionTime = (props:Props) => {
   return (
     <div
       onClick={props.onClick}

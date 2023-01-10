@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+
 import { BlockFormTime } from './BlockFromTime'
 import { FormSelectionTime } from './FormSelectionTime'
 import style from './style.module.css'
@@ -9,7 +10,13 @@ const TIMES = [
   { from: '11:20', to: '13:05' },
 ]
 
-export function FormFlightTime(props) {
+type Props = {
+  cityFrom: string
+  cityTo: string
+  dateFrom: string
+}
+
+export function FormFlightTime(props: Props) {
   const [value, setValue] = useState(0)
 
   const items = TIMES.map((time, i) => {
@@ -27,7 +34,12 @@ export function FormFlightTime(props) {
 
   return (
     <div className={style.BlockFormTime}>
-      <BlockFormTime time={selectedTime} cityFrom={props.cityFrom} cityTo={props.cityTo} dateFrom={props.dateFrom}  />
+      <BlockFormTime
+        time={selectedTime}
+        cityFrom={props.cityFrom}
+        cityTo={props.cityTo}
+        dateFrom={props.dateFrom}
+      />
       <div className={style.blockFlightTime}>{items}</div>
     </div>
   )

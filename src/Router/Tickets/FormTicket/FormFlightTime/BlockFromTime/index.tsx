@@ -1,14 +1,20 @@
-import React from 'react'
+import { Time } from '../../../../../../types'
 import schemePath from './scheme.svg'
-
 import style from './style.module.css'
 
-function capitalize(str) {
+function capitalize(str: string) {
   if (!str) return str
   return str[0].toUpperCase() + str.slice(1)
 }
 
-export function BlockFormTime(props) {
+type Props = {
+  cityFrom: string
+  cityTo: string
+  dateFrom: string
+  time: Time
+}
+
+export function BlockFormTime(props: Props) {
   return (
     <div className={style.blockTime}>
       <div className={style.blockDepartureTime}>
@@ -18,7 +24,7 @@ export function BlockFormTime(props) {
         <p className={style.departureData}>{props.dateFrom}</p>
       </div>
       <div className={style.blockSchemePath}>
-        <img className={style.img} src={schemePath} />
+        <img className={style.img} src={schemePath} alt='img' />
       </div>
       <div className={style.blockArrivalTime}>
         {' '}
